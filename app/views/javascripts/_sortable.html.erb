@@ -1,0 +1,18 @@
+<script>
+    $(function(){
+      $('<%=list_item_id %>').sortable({
+        handle: ".handle",
+        update: function(){
+         $.ajax({
+           type: "POST",
+           url: "<%=url_for(:action=>'sort') %>",
+           processData: false,
+           data: $('<%= list_item_id %>').sortable('serialize'),
+           success: function(){
+//              alert("The list has been sorted")
+           }
+         });
+        }
+      });
+    });
+</script>

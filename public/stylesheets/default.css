@@ -1,0 +1,42 @@
+body{
+  background: #212121;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   14px;
+  line-height: 18px;
+  color: #CFD784;
+}
+
+a{
+  color: #808080;
+}
+
+a:hover{
+  color: #FFFFFF;
+}
+
+#container{
+  width:920px;
+  margin: 10px auto;    
+}
+
+.leftPanel{
+  float:left;
+  width:24%;
+  -moz-border-radius: 10px;
+  border: 2px solid #808080;
+  height:680px;
+}
+
+.mainPanel{
+  -moz-border-radius: 10px;
+  border: 2px solid #808080;
+  float:right;
+  width:74%;
+  height:680px;  
+}
+
+/*#1D272B dark green body*/
+/*#17262B green border*/
+/*#808080 gray font */
+/*#CFD784 cream/yello font/border */
+/*#C3C3C3 light gray font */

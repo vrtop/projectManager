@@ -1,0 +1,18 @@
+<div class="leftPanel">
+  <%= link_to "Edit Project", "/projects/new", :remote=>true %>
+</div>
+<div class="mainPanel">
+  <div class="projectCategory">
+  </div>
+  <div>
+    <ul id="project">
+      <% for project in @projects %>
+        <li id="<%='project_' + project.id.to_s %>" class="project">
+          <%= render :partial=>"/projects/project", :locals=>{:project=>project} %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <%= render :partial=>"/javascripts/sortable",
+             :locals=>{:list_item_id=>"#project"} %>
+</div>

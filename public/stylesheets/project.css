@@ -1,0 +1,24 @@
+#project{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+#project li{
+  display:block;
+}
+
+.project{
+  -moz-border-radius: 7px;
+  border: 2px solid #17262B;
+  color: #808080;
+  background:#1D272B;
+  margin:5px;
+  padding:5px;
+  cursor: pointer;
+}
+
+.project:hover{
+  border: 2px solid #C0D9AF;
+  color: #DBE6E0;
+}

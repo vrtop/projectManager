@@ -1,0 +1,6 @@
+.projectCategory{
+  height: 100px;
+  -moz-border-radius: 10px 10px 0 0;
+  background: #1D272B;
+  border-bottom: 2px solid #808080;
+}

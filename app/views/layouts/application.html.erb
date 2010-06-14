@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProjectManager</title>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :all %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+
+    <div id="container">
+      <%= yield %>
+    </div>
+
+    <div id="lightboxContainer">
+      <div id="lightboxContent"></div>
+      <div id="lightboxErrors" style="display:none"></div>
+    </div>
+
+  </body>
+
+</html>
